@@ -239,6 +239,12 @@ template {
     margin-top: 0px;
 }
 
+.panel {
+  background: #293449;
+  height: 42px;
+}
+
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -246,16 +252,24 @@ template {
 }
 
 .top-panel {
-  display: inline-flex;
+  display: flex;
 }
 .logo {
   width: 220px;
   height: 42px;
   font-size: 0px;
   background-color: #ee3643;
-  border-bottom: 5px;
-  border-bottom-color: #b52933;
   margin: 0px;
+  font-size: 0px;
+  box-shadow: 0 5px 0 #b52933;
+
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+.logo:active {
+  background-color: #ba2732
 }
 
 .logo a {
@@ -263,23 +277,55 @@ template {
   padding-right: 55px;
   padding-top: 13px;
   padding-bottom: 12px;
-  width: 110px;
-  height: 17px;
+  width: 220px;
+  height: 42px;
+  
+}
+.logo h1 {
   font-family: 'Cuprum', sans-serif;
   font-size: 24px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0 0;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+
 }
+
 .searh button {
-  height: 18px;
-  width: 18px;
-  border: 0px;
-  background: url(../img/SPRITE.png);
+  height: 42px;
+  width: 49px;
+  border: none;
+  background-color: #293449;
+  padding: 0px;
+  position: relative;
+  background: url(../img/SPRITE.png) 0 0;
+ 
+  background-repeat: no-repeat;
+ 
 }
-a.Tel-Contacts::before {
-  background: url(../img/SPRITE.png);
+
+.searh button:hover {
+    background: url(../img/SPRITE.png) 0px -45px;
 }
+
+.searh input:active {
+  
+}
+
+.searh button:active   {
+    background: url(../img/SPRITE.png) 0px -97px;
+}
+
+.top-menu ul {
+  display: flex;
+}
+
+
+
 
 
 
